@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Logit/NB_starter.py&apos; to &apos;Logit.py&apos;" description="Rename resource &apos;NB_starter.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="NB_starter.py" name="Logit.py" stamp="1378458586465" updateReferences="true"/>
+</session>

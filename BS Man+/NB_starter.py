@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn import cross_validation
 
 # Set a seed for consistant results
 ###############################################################################
@@ -43,9 +44,24 @@ body_counts = body_counter.fit_transform(X_all['body'])
 bodies = body_counts[len(X_test.index):]
 bodies_test = body_counts[:len(X_test.index)]
 
-# Fit a model and predict
+# Fit a model
 model = BernoulliNB()
 model.fit(bodies, y)
+
+print np.mean(cross_validation.cross_val_score(model, bodies, y, cv=10, scoring='roc_auc'))
+
+# #Simple K-Fold cross validation. 5 folds.
+# cv = cross_validation.KFold(len(X), k=5, indices=False)
+# 
+# #iterate through the training and test cross validation segments and
+# #run the classifier on each one, aggregating the results into a list
+# results = []
+# for traincv, testcv in cv:
+#     print traincv
+#     print testcv
+#     
+# #     probas = cfr.fit(train[traincv], target[traincv]).predict_proba(train[testcv])
+# #     results.append( logloss.llfun(target[testcv], [x[1] for x in probas]) )
 
 # Added following three lines
 train_preds = model.predict_proba(bodies)[:,1]

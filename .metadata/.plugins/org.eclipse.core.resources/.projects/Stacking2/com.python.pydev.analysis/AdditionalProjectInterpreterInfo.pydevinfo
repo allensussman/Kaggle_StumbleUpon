@@ -1,0 +1,23 @@
+-- VERSION_3
+-- START DISKCACHE
+C:\Users\Allen\Documents\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Stacking2\com.python.pydev.analysis\v1_indexcache
+.v1_indexcache
+Stacking2|0|C:\Users\Allen\Documents\workspace\Stacking2\Stacking2.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=Stacking2
+-- END DICTIONARY
+-- START TREE 1
+7
+X|1|X!11@
+bod|4|body_counts!11@bodies!11@body_counter!11@bodies_test!11@
+mod|1|model!11@
+pre|2|preds!11@pred_df!11@
+x_a|1|X_all!11@
+x_t|1|X_test!11@
+y|1|y!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Stacking2/NB_starter.py&apos; to &apos;Stacking2.py&apos;" description="Rename resource &apos;NB_starter.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="NB_starter.py" name="Stacking2.py" stamp="1378448072198" updateReferences="true"/>
+</session>

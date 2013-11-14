@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Foxtrot+/csv2vw.py&apos; to &apos;tsv2vw.py&apos;" description="Rename resource &apos;csv2vw.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="csv2vw.py" name="tsv2vw.py" stamp="1378452606965" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Foxtrot+/p.txt&apos; to &apos;test_p.txt&apos;" description="Rename resource &apos;p.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="p.txt" name="test_p.txt" stamp="1378457903137" updateReferences="true"/>
+</session>

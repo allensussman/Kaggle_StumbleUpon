@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Foxtrot/tsv2vw.py&apos; to &apos;csv2vw.py&apos;" description="Rename resource &apos;tsv2vw.py&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="tsv2vw.py" name="csv2vw.py" stamp="1378452873972" updateReferences="true"/>
+</session>
