@@ -1,6 +1,6 @@
 Code for Kaggle's StumbleUpon Evergreen Classification Challenge
 
-To run, run the code BS Man+, Foxtrot+, Logit, and Zygmuntz+, then run the code in Stacking.  (See the README's in each directory.) 
+To run, run the code in BS Man+, Foxtrot+, Logit, and Zygmuntz+, then run the code in Stacking.  (See the README's in each directory.) 
 
 	BS MAN+ contains code for classifying using naive bayes
 	
