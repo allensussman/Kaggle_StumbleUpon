@@ -7,6 +7,9 @@ nnlearn -e 50 -h 64 -r 0.1 train.txt train.txt model
 
 nnclassify test.txt model.auc p.txt
 
+nnclassify train.txt model.auc train_p.txt
+
 
 p2sub.py sampleSubmission.csv p.txt p.csv
 
+p2sub.py sampleSubmission_train.csv train_p.txt train_p.csv
