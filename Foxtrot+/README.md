@@ -1,11 +1,19 @@
-Usage:
+Code for classifying using vowpal wabbit
 
-tsv2vw.py
+	CMDLINE: Usage information
+	
+	DATA/: Contains test and training data
+	
+	TSV2VW: converts test and train data to vowpal wabbit input format
+	
+	VW: vowpal wabbit
+	
+	P2SUB: converts vowal wabbit output to submission format
+	
+	SAMPLESUBMISSION.CSV: sample submission with same length as test data
 
-vw -d train.vw -c -k -f model --loss_function logistic --passes 10 -p train_p.txt 
-
-vw -t -d test.vw -i model -p test_p.txt
-
-p2sub.py sampleSubmission_train.csv train_p.txt train_p.csv
-
-p2sub.py sampleSubmission.csv test_p.txt test_p.csv
+	SAMPLESUBMISSION_TRAIN.CSV: sample submission with same length as train data
+	
+	AUC: calculates area under the curve VW validation and prediction file
+	
+	ML_METRICS_AUC: ML metric's AUC function

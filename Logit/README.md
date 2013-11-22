@@ -1,0 +1,1 @@
+Classifies test and train data using logistic regression.  Simply run Logit.
