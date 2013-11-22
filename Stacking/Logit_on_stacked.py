@@ -1,7 +1,4 @@
-""" Naive Bayes Starter Code - StumbleUpon Kaggle Competition
-bensolucky@gmail.com 
-Kaggle: BS Man
-"""
+'Does model stacking on model results using logistic Regression'
 
 import json
 import numpy as np

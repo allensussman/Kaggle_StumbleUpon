@@ -1,7 +1,4 @@
-""" Naive Bayes Starter Code - StumbleUpon Kaggle Competition
-bensolucky@gmail.com 
-Kaggle: BS Man
-"""
+'Does model stacking on different model results using SVC'
 
 import json
 import numpy as np
