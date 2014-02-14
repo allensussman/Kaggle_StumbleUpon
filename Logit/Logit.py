@@ -1,8 +1,3 @@
-""" Naive Bayes Starter Code - StumbleUpon Kaggle Competition
-bensolucky@gmail.com 
-Kaggle: BS Man
-"""
-
 import json
 import numpy as np
 import pandas as pd
