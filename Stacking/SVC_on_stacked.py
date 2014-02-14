@@ -18,15 +18,15 @@ from sklearn import metrics
 X = pd.read_csv('data/train.tsv', sep="\t", na_values=['?'], index_col=1)
 y = X['label']
 
-Zygmuntz=pd.read_csv('../Zygmuntz+/train_p.csv', sep=",", na_values=['?'], index_col=0)
+SparseNN=pd.read_csv('../SparseNN/train_p.csv', sep=",", na_values=['?'], index_col=0)
 
-BS_Man=pd.read_csv('../BS Man+/train_p.csv', sep=",", na_values=['?'], index_col=0)
+Naive_Bayes=pd.read_csv('../Naive_Bayes/train_p.csv', sep=",", na_values=['?'], index_col=0)
 
-Foxtrot=pd.read_csv('../Foxtrot+/train_p.csv', sep=",", na_values=['?'], index_col=0)
+Vowpal_Wabbit=pd.read_csv('../Vowpal_Wabbit/train_p.csv', sep=",", na_values=['?'], index_col=0)
 
 Logit=pd.read_csv('../Logit/train_p.csv', sep=",", na_values=['?'], index_col=0)
 
-train_preds=pd.DataFrame({'BS_Man': BS_Man['label'],'Zygmuntz':Zygmuntz['label'],'Foxtrot':Foxtrot['label'],'Logit':Logit['label']})
+train_preds=pd.DataFrame({'Naive_Bayes': Naive_Bayes['label'],'SparseNN':SparseNN['label'],'Vowpal_Wabbit':Vowpal_Wabbit['label'],'Logit':Logit['label']})
 
 clf=svm.SVC(probability=True);
 
@@ -57,15 +57,15 @@ meta_train_pred_df.to_csv('meta_train_p.csv')
 X = pd.read_csv('data/test.tsv', sep="\t", na_values=['?'], index_col=1)
 # X_test = pd.read_csv('data/test.tsv', sep="\t", na_values=['?'], index_col=1)
 
-Zygmuntz=pd.read_csv('../Zygmuntz+/p.csv', sep=",", na_values=['?'], index_col=0)
+SparseNN=pd.read_csv('../SparseNN/p.csv', sep=",", na_values=['?'], index_col=0)
 
-BS_Man=pd.read_csv('../BS Man+/test.csv', sep=",", na_values=['?'], index_col=0)
+Naive_Bayes=pd.read_csv('../Naive_Bayes/test.csv', sep=",", na_values=['?'], index_col=0)
 
-Foxtrot=pd.read_csv('../Foxtrot+/test_p.csv', sep=",", na_values=['?'], index_col=0)
+Vowpal_Wabbit=pd.read_csv('../Vowpal_Wabbit/test_p.csv', sep=",", na_values=['?'], index_col=0)
 
 Logit=pd.read_csv('../Logit/test.csv', sep=",", na_values=['?'], index_col=0)
 
-preds=pd.DataFrame({'BS_Man': BS_Man['label'],'Zygmuntz':Zygmuntz['label'],'Foxtrot':Foxtrot['label'],'Logit':Logit['label']})
+preds=pd.DataFrame({'Naive_Bayes': Naive_Bayes['label'],'SparseNN':SparseNN['label'],'Vowpal_Wabbit':Vowpal_Wabbit['label'],'Logit':Logit['label']})
 
 meta_pred=clf.predict_proba(preds)[:,1]
 meta_pred_df = pd.DataFrame(meta_pred, index=X.index, columns=['label'])

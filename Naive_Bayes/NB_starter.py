@@ -1,4 +1,4 @@
-""" Naive Bayes Starter Code - StumbleUpon Kaggle Competition
+""" Exntension of code by
 bensolucky@gmail.com 
 Kaggle: BS Man
 """
