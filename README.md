@@ -6,7 +6,7 @@ To run, run the code in Naive_Bayes, Vowpal_Wabbit, Logit, and SparseNN, then ru
 	
 	VOWPAL_WABBIT contains code for classifying using vowpal wabbit, and is based on code by Kaggle user Foxtrot
 	
-	LOGIT contains code for classifying using logistic regression
+	LOGIT contains code for classifying using logistic regression, and is based on the NAIVE_BAYES code
 	
 	SPARSENN contains code for classifying using a neural network optimized for sparse matrices, and is based on code by Kaggle user Zygmuntz
 	
